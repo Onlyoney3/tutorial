@@ -1,0 +1,2701 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{indentfirst}
+\usepackage[justification=centering]{caption}
+\end_preamble
+\options journal
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for articles to be submitted to journals of the
+ Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE conference articles, see the template file 
+\emph on
+IEEEtran-Conference.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Course Work for 'Adaptive Full State Observer for Nonsalient PMSM with Noised
+ Measurements of the Current and Voltage'
+\end_layout
+
+\begin_layout Author
+Yu Youyang 
+\end_layout
+
+\begin_layout Special Paper Notice
+293834
+\end_layout
+
+\begin_layout Page headings
+Yu Youyang 
+\begin_inset Flex Lowercase
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+et al.
+\end_layout
+
+\end_inset
+
+: Course Work for 'Adaptive Full State Observer for Nonsalient PMSM with
+ Noised Measurements of the Current and Voltage'
+\end_layout
+
+\begin_layout Peer Review Title
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Don't add text here!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+required if you use the document class option 
+\family sans
+peerreview
+\family default
+, must otherwise not be used
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Paragraph Start
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+O
+\end_layout
+
+\end_inset
+
+riginal
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The 
+\series bold
+
+\backslash
+IEEEPARstart
+\series default
+ command is needed in the first paragraph of the document.
+\end_layout
+
+\end_inset
+
+ paper introduces an adaptive algorithm for estimating magnetic flux in
+ non-salient permanent magnet synchronous motors (PMSMs) with electrical
+ signal offsets.
+ Using a novel nonlinear parameterization via the dynamical regressor extension
+ and mixing (DREM) procedure, the flux estimation problem is reformulated
+ to identify constant parameters linked to measurement errors.
+ The algorithm ensures the flux observation error converges to a bounded
+ set with position error converging to zero, achieving global exponential
+ convergence under persistent excitation and global asymptotic convergence
+ otherwise.
+ In this paper, noises in the measurable signals are investigated, and the
+ anti-noise ability of this observer is studied by applying four different
+ noises.
+ From the experiments, this observer has good anti-interference ability
+ to high frequency and low frequency noises.
+ It has poor anti-jamming ability to Random noises with zero mean and Random
+ noises with non-zero mean.
+\end_layout
+
+\begin_layout Section
+Problem formulation
+\end_layout
+
+\begin_layout Standard
+Consider the classical, two–phase 𝛼𝛽 model of the unsaturated, non–salient
+ PMSM in the stationary frame
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{matrix}{\dot{\lambda}}_{\alpha\beta} & = & v_{\alpha\beta}-Ri_{\alpha\beta},\\
+J_{m}\dot{\omega} & = & -B\omega+\tau_{e}-\tau_{L},\\
+\dot{\theta} & = & \omega,
+\end{matrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\lambda_{\alpha\beta}\in\mathbb{R}^{2}$
+\end_inset
+
+ is the total flux,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{\alpha\beta}\in\mathbb{R}^{2}$
+\end_inset
+
+ are the stator currents,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{\alpha\beta}\in\mathbb{R}^{2}$
+\end_inset
+
+ are the stator voltages, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $𝑅>0$
+\end_inset
+
+ is the stator windings resistance,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J_{m}>0$
+\end_inset
+
+ is the rotor inertia, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta\in\mathbb{S}:=[0,2\pi)$
+\end_inset
+
+ is the rotor phase, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega\in\mathbb{R}$
+\end_inset
+
+ is the mechanical angular velocity, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\geq0$
+\end_inset
+
+ is the viscous friction coefficient, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{L}\in\mathbb{R}$
+\end_inset
+
+ is the—possibly time–varying—load torque, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{e}$
+\end_inset
+
+ is the torque of electrical origin.
+\end_layout
+
+\begin_layout Standard
+The total flux of the surface–mounted PMSM verifies
+\begin_inset Formula 
+\begin{equation}
+\lambda_{\alpha\beta}=Li_{\alpha\beta}+\lambda_{m}\left[\begin{array}{c}
+\cos(n_{p}\theta)\\
+\sin(n_{p}\theta)
+\end{array}\right],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $𝐿>0$
+\end_inset
+
+ is the stator inductance, 
+\begin_inset Formula $𝜆_{m}$
+\end_inset
+
+ is the constant flux generated by permanent magnets and 
+\begin_inset Formula $n_{p}\in\mathbb{N}$
+\end_inset
+
+ is the number of pole pairs.
+ Let's abbreviate 
+\begin_inset Formula $i_{\alpha\beta}$
+\end_inset
+
+ to 
+\begin_inset Formula $i$
+\end_inset
+
+ for simplicity.
+\end_layout
+
+\begin_layout Standard
+Assume the only signals available for measurements are the current 
+\begin_inset Formula $i$
+\end_inset
+
+and the voltage 
+\begin_inset Formula $v$
+\end_inset
+
+, which are corrupted by constant unknown bias terms 
+\begin_inset Formula $\delta_{i}\in\mathbb{R}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{v}\in\mathbb{R}^{2}$
+\end_inset
+
+, respectively, that is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+i_{m}=i+\delta_{i}\\
+v_{m}=v+\delta_{v}
+\end{cases}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $i_{m}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $v_{m}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ are actually measured signals.
+ The resistance
+\begin_inset Formula $R$
+\end_inset
+
+ and the inductance 
+\begin_inset Formula $L$
+\end_inset
+
+ are assumed to be known.
+\end_layout
+
+\begin_layout Standard
+The goal is to reconstruct asymptotically the total flux 
+\begin_inset Formula $λ$
+\end_inset
+
+ with asymptotic convergence of estimation errors to 0.
+ It is also very necessary to investigate noises in the measurable signals.
+\end_layout
+
+\begin_layout Subsection
+Model reparameterization 
+\end_layout
+
+\begin_layout Standard
+The adaptive flux observer for PMSM was based on the equation
+\begin_inset Formula 
+\begin{equation}
+\left|\lambda-Li\right|^{2}-\lambda_{m}^{2}=0,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which follows from (2).
+\end_layout
+
+\begin_layout Standard
+Expanding expressions (4) fields as
+\begin_inset Formula 
+\begin{equation}
+\lambda^{\top}\lambda-2L\lambda^{\top}i_{m}+L^{2}i_{m}^{\top}i_{m}+\lambda^{\top}\eta_{1}+i_{m}^{\top}\eta_{2}+\eta_{3}=0,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\eta_{1}~=~2L\delta_{i},~\eta_{2}~=~-2L^{2}\delta_{i},~\eta_{3}~=~L^{2}\delta_{i}^{\top}\delta_{i}-\lambda_{m}^{2}$
+\end_inset
+
+ are constants that are unknown.
+\end_layout
+
+\begin_layout Standard
+Differentiate (5) fields as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+2\dot{\lambda}^{\top}\lambda-2L(\dot{\lambda}^{\top}i_{m}+\lambda^{\top}\dot{i})+2L^{2}\dot{i}_{m}^{\top}i_{m}+\dot{\lambda}^{\top}\eta_{1}+\dot{i}_{m}^{\top}\eta_{2}=0,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then apply the filter
+\begin_inset Formula $\frac{\nu}{p+\nu}$
+\end_inset
+
+ , where 
+\begin_inset Formula $p:=\frac{d}{dt}$
+\end_inset
+
+ is a differential operator.
+ And then using the Swapping Lemma to get the regressor equation where the
+ flux 
+\begin_inset Formula $λ$
+\end_inset
+
+ and vector 
+\begin_inset Formula $η$
+\end_inset
+
+ enter linearly only.
+ Finally apply the filter 
+\begin_inset Formula $\frac{p}{p+\nu}$
+\end_inset
+
+.
+ Rewritting obtained operator expression as ordinary differential equations
+ to get following equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \dot{\xi}_{1}=-\nu\xi_{1}+2\nu y_{m}+2\nu^{2}Li_{m},\\
+ & \dot{\xi}_{2}=-\nu\xi_{2}+\xi_{1}+2y_{m},\\
+ & \dot{\xi}_{3}=-\nu\xi_{3}+y_{m}^{\top}\xi_{1}+\nu^{2}L^{2}i_{m}^{\top}i_{m},\\
+ & \dot{\xi}_{4}=-\nu\xi_{4}+\nu\xi_{2}-\xi_{1},\\
+ & \dot{\xi}_{5}=-\nu\xi_{5}+\nu\xi_{3}-\nu^{2}L^{2}i_{m}^{\top}i_{m}+y_{m}^{\top}(\nu\xi_{2}-\xi_{1}),
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Select 
+\begin_inset Formula $y_{m}=-Ri_{m}+v_{m}$
+\end_inset
+
+, and define 
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & y=\xi_{3}-\nu L^{2}i_{m}^{\top}i_{m}-\xi_{5},\\
+ & \Phi=2\xi_{1}-2\nu Li_{m}-\nu\xi_{2},\\
+ & \Psi=\begin{pmatrix}2\xi_{4}\\
+\\
+2\nu^{-1}
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+According to Proposition 1, the following regression model holds
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \dot{\lambda}=-Ri_{m}+v_{m}+\eta_{m},\\
+ & y=\Phi^{\top}(\lambda+\frac{1}{2}\eta_{1})+\Psi^{\top}\eta+\varepsilon_{t},
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the known functions 
+\begin_inset Formula $y,Φ,Ψ$
+\end_inset
+
+ are computed from available signals, 
+\begin_inset Formula $\begin{array}{clcc}
+\eta_{m}:= & R\delta_{i} & - & \delta_{v}\end{array}$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta_{m}:=\begin{pmatrix}\eta_{m1} & \eta_{m2} & \eta_{m}^{\top}\eta_{m}\end{pmatrix}^{\top}$
+\end_inset
+
+ are unknown constant vectors and 
+\begin_inset Formula $\varepsilon_{t}$
+\end_inset
+
+ is an exponentially decaying term.
+\end_layout
+
+\begin_layout Subsection
+DREM-based estimator
+\end_layout
+
+\begin_layout Standard
+Now, it is necessary to estimate the unknowns.
+ Directly, the DREM procedure is not applicable to the model (9) since 
+\begin_inset Formula $λ$
+\end_inset
+
+ is a function of time.
+ 
+\end_layout
+
+\begin_layout Standard
+Step 1.
+ Extension
+\end_layout
+
+\begin_layout Standard
+In accordance with DREM we need to form 
+\begin_inset Formula $\mathrm{dim~}(\lambda+\frac{1}{2}\eta_{1})+\mathrm{dim~}(\eta)-1=4$
+\end_inset
+
+ new regression models with different filter 
+\begin_inset Formula $\frac{\alpha}{p+\alpha}$
+\end_inset
+
+ with the coefficient 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ from the original one (9)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \begin{aligned}\frac{\alpha}{p+\alpha}y=\frac{\alpha}{p+\alpha}\Phi^{\top}(\lambda+\frac{1}{2}\eta_{1})+\frac{\alpha}{p+\alpha}\Psi^{\top}\eta\end{aligned}
+\\
+ & =(\lambda+\frac{1}{2}\eta_{1})^{\top}\frac{\alpha}{p+\alpha}\Phi-\frac{1}{p+\alpha}\left(\dot{\lambda}^{\top}\frac{\alpha}{p+\alpha}\Phi\right)+\eta^{\top}\frac{\alpha}{p+\alpha}\Psi\\
+ & =(\lambda+\frac{1}{2}\eta_{1})^{\top}\frac{\alpha}{p+\alpha}\Phi-\frac{1}{p+\alpha}\left((v_{m}-Ri_{m}+\eta_{m})^{\top}\frac{\alpha}{p+\alpha}\Phi\right)\\
+ & +\eta^{\top}\frac{\alpha}{p+\alpha}\Psi=(\lambda+\frac{1}{2}\eta_{1})^{\top}\frac{\alpha}{p+\alpha}\Phi-\frac{1}{p+\alpha}\left(y_{m}^{\top}\frac{\alpha}{p+\alpha}\Phi\right)\\
+ & -\eta_{m}^{\top}\frac{\alpha}{(p+\alpha)^{2}}\Phi+\eta_{m}^{\top}\frac{\alpha}{p+\alpha}(2\xi_{4})+\eta_{m}^{\top}\eta_{m}\frac{\alpha}{p+\alpha}(2\nu^{-1})
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rewrite as 
+\begin_inset Formula 
+\begin{equation}
+z_{\alpha}=\overline{\Phi}_{\alpha}^{\top}(\lambda+\frac{1}{2}\eta_{1})+\overline{\Psi}_{\alpha}^{\top}\eta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & z_{\alpha}=\frac{\alpha}{p+\alpha}y+\frac{1}{p+\alpha}\left(y_{m}^{\top}\frac{\alpha}{p+\alpha}\Phi\right),\\
+ & \overline{\Phi}=\frac{\alpha}{p+\alpha}\Phi,\\
+ & \overline{\Psi}=\begin{pmatrix}\frac{\alpha}{p+\alpha}(2\xi_{4})-\frac{\alpha}{(p+\alpha)^{2}}\Phi\\
+\frac{\alpha}{p+\alpha}(2\nu^{-1})
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Step 2.
+ Mixing
+\end_layout
+
+\begin_layout Standard
+According to Step 1.Extension , we can mix the new regression model and obtain
+ the extended regression,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z(t)=M(t)\begin{pmatrix}\lambda(t)+\frac{1}{2}\eta_{1}\\
+\eta
+\end{pmatrix},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\[
+Z(t):=\begin{pmatrix}y(t)\\
+\\
+z_{1}(t)\\
+\vdots\\
+z_{N}(t)
+\end{pmatrix},\quad M(t):=\begin{pmatrix}\Phi^{\top} & \Psi^{\top}\\
+\\
+\overline{\Phi}_{1}^{\top} & \overline{\Psi}_{1}^{\top}\\
+\\
+\vdots & \vdots\\
+\\
+\overline{\Phi}_{N}^{\top} & \overline{\Psi}_{N}^{\top}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next step is to obtain a set of scalar N equations as follows,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\mathrm{adj}M(t)Z(t) & =\mathrm{adj}M(t)M(t)\begin{pmatrix}\lambda(t)+\frac{1}{2}\eta_{1}\\
+\eta
+\end{pmatrix}\\
+ & =\det M(t)\begin{pmatrix}\lambda(t)+\frac{1}{2}\eta_{1}\\
+\eta
+\end{pmatrix}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then split it to 2 rows as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}Y_{\lambda}(t) & =\Delta(t)(\lambda(t)+\frac{1}{2}\eta_{1}),\\
+\\
+Y_{\eta}(t) & =\Delta(t)\eta,
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}Y(t):=\binom{Y_{\lambda}(t)}{Y_{\eta}(t)} & =\mathrm{adj}M(t)\left.Z(t),\right.\\
+\\
+\Delta(t):=\det M(t).
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To estimate 
+\begin_inset Formula $𝜂$
+\end_inset
+
+ we use the classical gradient algorithm as Proposition 2,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\hat{\eta}}=\gamma_{\eta}\Delta\left(Y_{\eta}-\Delta\hat{\eta}\right),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As seen from (14) the estimate of flux is affected by the unknown parameter
+ 
+\begin_inset Formula $η_{1}$
+\end_inset
+
+ which is proportional to the un- known constant bias of currents 
+\begin_inset Formula $δ_{i}$
+\end_inset
+
+.
+ Therefore, the paper considers the following three scenarios to construct
+ the flux observer:
+\end_layout
+
+\begin_layout Standard
+1)
+\begin_inset Formula $δ_{i}$
+\end_inset
+
+ is known and 
+\begin_inset Formula $δ_{v}$
+\end_inset
+
+ is unknown;
+\end_layout
+
+\begin_layout Standard
+2)
+\begin_inset Formula $δ_{i}$
+\end_inset
+
+ is unknown and 
+\begin_inset Formula $δ_{v}$
+\end_inset
+
+ is known; 
+\end_layout
+
+\begin_layout Standard
+3) both 
+\begin_inset Formula $δ_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $δ_{v}$
+\end_inset
+
+ are unknown.
+\end_layout
+
+\begin_layout Standard
+For first scenarios, original paper construts following model,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \hat{\lambda}=\chi-L\delta_{i},\\
+ & \dot{\chi}=-Ri_{m}+v_{m}+\hat{\eta}_{m}+\gamma_{\lambda}\Delta\left(Y_{\lambda}-\Delta\chi\right)
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For seconed scenarios, original paper construts following model,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \hat{\lambda}=\chi-\frac{L}{R}(\hat{\eta}_{m}+\delta_{v}),\\
+ & \dot{\chi}=-Ri_{m}+v_{m}+\hat{\eta}_{m}+\gamma_{\lambda}\Delta\left(Y_{\lambda}-\Delta\chi\right)
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For third scenarios, original paper construts following model,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \hat{\lambda}=\chi-\frac{L}{R}\hat{\eta}_{m},\\
+ & \dot{\chi}=-Ri_{m}+v_{m}+\hat{\eta}_{m}+\gamma_{\lambda}\Delta\left(Y_{\lambda}-\Delta\chi\right),
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Position and speed observer
+\end_layout
+
+\begin_layout Standard
+The unknown position is reconstructed by the following.
+ Replacing (3) in (2) we obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda=Li_{m}-L\delta_{i}+\lambda_{m}C(\theta).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because 
+\begin_inset Formula $\eta_{1}=2L\delta_{i}$
+\end_inset
+
+ and as seen from (16), (17) and (18) the estimate of the signal 
+\begin_inset Formula $(\lambda+\frac{1}{2}\eta_{1})$
+\end_inset
+
+ is generated by the signal 
+\begin_inset Formula $χ$
+\end_inset
+
+.
+ We obtain following equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{\theta}(t)=\frac{1}{n_{p}}\arctan\left(\frac{\chi_{2}-Li_{m2}}{\chi_{1}-Li_{m1}}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The rotor speed can be estimated from the observed position 
+\begin_inset Formula $\hat{θ}$
+\end_inset
+
+ with the help of a standard phase-locked loop (PLL) speed estimator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{\chi}_{1} & =K_{p}(\hat{\theta}-\chi_{1})+K_{i}\chi_{2},\quad\dot{\chi}_{2}=\hat{\theta}-\chi_{1},\\
+\hat{\omega} & =K_{p}(\hat{\theta}-\chi_{1})+K_{i}\chi_{2},
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $𝐾_{p}$
+\end_inset
+
+ > 0 and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $𝐾_{i}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ > 0 are proportional and integral gains, respectively.
+\end_layout
+
+\begin_layout Standard
+This PLL-type speed estimator is constructed from angle error
+\begin_inset Formula $\hat{\theta}-\chi_{1}$
+\end_inset
+
+.
+ The esti- mator uses PLL angle 
+\begin_inset Formula $𝜒_{1}$
+\end_inset
+
+ and PLL angle error 
+\begin_inset Formula $𝜒_{2}$
+\end_inset
+
+.
+ Using these two new variables we form a tracking controller consisting
+ of a PI regulator and an integrator.
+ The PI gains of the controller are 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $𝐾_{p}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and 
+\begin_inset Formula $𝐾_{i}$
+\end_inset
+
+.
+ Motivation of the PI regulator application stems from the fact that PI
+ controllers have the ability of suppressing error under the presence of
+ a disturbance.
+\end_layout
+
+\begin_layout Section
+Implementation in Matlab
+\end_layout
+
+\begin_layout Standard
+Firstly the PMSM model with constant unknown bias term and vetor control
+ in constructed in Simulink in Figure 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\family sans
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/PMSM.png
+	width 4.5cm
+	height 4.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+the PMSM model with constant unknown bias term and vetor control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And then construct the regression model (9) in Figure 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/2024-06-03 18.54.52.png
+	width 4cm
+	height 4cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+regression model (9)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And to find the 
+\begin_inset Formula $\overline{\Phi}$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{\Psi}$
+\end_inset
+
+ construct the diffrential equations (7) in Figure 3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/rewirte model.png
+	width 7cm
+	height 7cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+diffrential equations(7)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then using DREM method, to construct the Step 1 extension in Figure 4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/FI&fi.png
+	width 7cm
+	height 7cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DREM: Step 1 extension
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then to Construct the Step 2 mixing in Figure 5.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/mixing.png
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DREM: Step 2 mixing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To estimate 
+\begin_inset Formula $\eta$
+\end_inset
+
+ , constrcut the SGD model(15) for it in Figure 6.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/mixing.png
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SGD model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+According to (16) (17) (18) to bulid flux observer for three scenarios in
+ Figure 7.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/3conditions.png
+	width 6cm
+	height 6cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+flux obeserver for 3 scenarios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally to estimate the position and the speed, we build the postion obsever
+ and PLL observer for speed in Figure 8 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/postion&omega.png
+	width 4cm
+	height 4cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+position and speed estimator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So far, the reproduction work in Matlab is finished.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+In this section , the parameters of PMSM motor are listed in Table 1.The
+ motor is controlled by classical field-oriented controller.The desired motor
+ speed increases linearly from 0 rad/sec to 523 rad/sec during the time
+ interval
+\begin_inset Formula $t\in(0;0.2)$
+\end_inset
+
+ sec and then remains constant.
+ The external load torque applied to the motor is zero at the start and
+\begin_inset Formula $τ_{L}=1N·m$
+\end_inset
+
+ after 0.3 sec.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parameters of the first motor BMP0701F
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter (units)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inductance L (mH)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40.03
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Drive inertia j (kgm2 )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $60×10^{−6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pairs of poles np (–)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Magnetic flux λm (Wb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2086
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And initial parameters and design parameters in the procedure (15) (16)
+ (17) (18)are listed in Table 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parameters of other parameters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter (units)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda^{\top}$
+\end_inset
+
+(0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0.2086 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega(0),\theta(0),i(0)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{\eta}^{\top}(0)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0 0 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\chi^{\top}(0)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1400
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $α_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+360
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $α_{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+520
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma_{\eta},\gamma_{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{p}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta_{i}^{\top}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0.4 − 0.3]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta_{v}^{\top}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0.2 − 0.1]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure 9 the transient processes for the estimates 
+\begin_inset Formula $\hat{\eta}^{\top}=\left[\hat{\eta}_{1}\left.\hat{\eta}_{2}\right.\hat{\eta}_{3}\right]=\left[\hat{\eta}_{m1}\left.\hat{\eta}_{m2}\right.\hat{\eta}_{m}^{\top}\hat{\eta}_{m}\right]$
+\end_inset
+
+ are shown.
+ As seen, the parameter estimates converge to their true values fast.
+ The estimates
+\begin_inset Formula $\hat{\eta}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\eta}_{2}$
+\end_inset
+
+perform very low oscillations.
+ The estimate
+\begin_inset Formula $\hat{\eta}_{3}$
+\end_inset
+
+ exhibits an overshoot at the beginning, then shows small fluctuations and
+ goes to the true value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/eta12.png
+	width 3.4cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/eta3.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+estimation of parameters 
+\begin_inset Formula $\hat{\eta}_{1}$
+\end_inset
+
+,
+\begin_inset Formula $\hat{\eta}_{2}$
+\end_inset
+
+and 
+\begin_inset Formula $\hat{\eta}_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 10 illustrate the transients of the absolute value of the flux observatio
+n error for the algorithms (14), (15) and (16), respectively.
+ As seen from simulation results, observers (14) and (15) perform fast convergen
+ce of the flux error to zero.
+ The transient behavior of the observer (16) is similar to the observers
+ (14) and (15).
+ And there is a low stationary error in the steady state which coincides
+ with analytically calculated bound.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/flux.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+absolute value of the flux observation error
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 11 demonstrates the transients of the estimation error for position
+ estimator and PLL estimator for speed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/position.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/speed.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+error for position estimator and PLL estimator for speed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now to investigate noises in the measurable signals.There are four kinds
+ of noise as following:1)Low frequency noises 2)High frequency noises 3)Random
+ noises with zero mean 4)Random noises with non-zero mean 
+\end_layout
+
+\begin_layout Standard
+For the first kind of noise:low frequency noises, I set 
+\begin_inset Formula $\epsilon_{v}^{\top}=\left[0.01sin(0.1t)\left.0.02sin(0.1t)\right.\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{i}^{\top}=\left[0.03sin(0.1t)\left.0.04sin(0.1t)\right.\right]$
+\end_inset
+
+,where 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+is noises in the measurable signals.
+ Figure 12 shows the transient processes for the estimates 
+\begin_inset Formula $\hat{\eta}^{\top}=\left[\hat{\eta}_{1}\left.\hat{\eta}_{2}\right.\hat{\eta}_{3}\right]=\left[\hat{\eta}_{m1}\left.\hat{\eta}_{m2}\right.\hat{\eta}_{m}^{\top}\hat{\eta}_{m}\right]$
+\end_inset
+
+ under the low frequency noises.
+ And Figure 13 shows the flux observation error under the low frequency
+ noises.
+ Similarly, as in the absence of noise, the parameter converges quickly.
+ With the superposition of noise, the measured value will continue to increase,
+ and the estimated value will deviate, so the measured value cannot be tracked.Ho
+wever, it has a good ability to resist low-frequency noise in a certain
+ period of time.But this error model does not converge to 0 as time tends
+ to infinity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise1_eta12.png
+	width 3.5cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise1_eta3.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+under the low frequency noises.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise1_flux.png
+	width 3.5cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $|\tilde{\lambda}(t)|$
+\end_inset
+
+ under low frequency noises
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the second kind of noise:high frequency noises, I set 
+\begin_inset Formula $\epsilon_{v}^{\top}=\left[0.01sin(t)\left.0.02sin(0.001t)\right.\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{i}^{\top}=\left[0.03sin(t)\left.0.04sin(0.001t)\right.\right]$
+\end_inset
+
+.
+ Figure 14 shows the transient processes for the estimates 
+\begin_inset Formula $\hat{\eta}^{\top}=\left[\hat{\eta}_{1}\left.\hat{\eta}_{2}\right.\hat{\eta}_{3}\right]=\left[\hat{\eta}_{m1}\left.\hat{\eta}_{m2}\right.\hat{\eta}_{m}^{\top}\hat{\eta}_{m}\right]$
+\end_inset
+
+ under the high frequency noises.
+ When noise is added, the measured value of 
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+ fluctuates, and the estimated value also fluctuates, but it can be clearly
+ seen that the fluctuation of the predicted value is much smaller than that
+ of the measured value, indicating that the model maintains good robustness
+ under the disturbance of high-frequency noise.Figure 15 shows the flux observati
+on error under the high frequency noises.
+ When noise is added, the flux observation error still converges to 0 at
+ 0.25s despite high frequency vibration.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise2_eta12.png
+	width 3.5cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise2_eta3.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+under the high frequency noises.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise2_flux.png
+	width 3.5cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $|\tilde{\lambda}(t)|$
+\end_inset
+
+ under high frequency noises
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the third kind of noise:random noises with zero mean, I used Band-Limited
+ White Noise block to set 
+\begin_inset Formula $\epsilon^{\top}$
+\end_inset
+
+with noise power of 0.001 and a sampling time of 0.01.Figure 16 shows the transient
+ processes for the estimates 
+\begin_inset Formula $\hat{\eta}^{\top}=\left[\hat{\eta}_{1}\left.\hat{\eta}_{2}\right.\hat{\eta}_{3}\right]=\left[\hat{\eta}_{m1}\left.\hat{\eta}_{m2}\right.\hat{\eta}_{m}^{\top}\hat{\eta}_{m}\right]$
+\end_inset
+
+ under the white noises.
+ After the white noise is applied, the fluctuation of 
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+ is very large, and the estimated value can track the measured value quickly,
+ but the estimated value has a very large oscillation at the beginning.
+ This shows that the anti-noise ability is very poor within 0-0.2s, but the
+ anti-noise ability is good after 0.2s.
+ Compared with the previous two kinds of noise, the error is large.
+ Figure 17 shows the flux observation error under the white noises.It clearly
+ shows that the addition of white noise prevents 
+\begin_inset Formula $|\tilde{\lambda}(t)|$
+\end_inset
+
+ from converging to 0 normally and from being consistent with bound.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise3_eta12.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise3_eta3.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+under the white noises.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise3_flux.png
+	width 3.5cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $|\tilde{\lambda}(t)|$
+\end_inset
+
+ under white noises
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the fourth kind of noise:random noises with none-zero mean, I used pink
+ block to set 
+\begin_inset Formula $\epsilon^{\top}$
+\end_inset
+
+with seed of 67, mean of 0.05 and a sampling time of 0.01.
+ Figure 18 shows the transient processes for the estimates 
+\begin_inset Formula $\hat{\eta}^{\top}=\left[\hat{\eta}_{1}\left.\hat{\eta}_{2}\right.\hat{\eta}_{3}\right]=\left[\hat{\eta}_{m1}\left.\hat{\eta}_{m2}\right.\hat{\eta}_{m}^{\top}\hat{\eta}_{m}\right]$
+\end_inset
+
+ under the pink noises with none-zero mean.After adding the random noise
+ with non-zero mean, the change of 
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+ is similar to that of the zero mean noise, with a large oscillation at
+ the beginning, and then it can track the measurement.
+ Figure 19 shows the similar condition of flux observation error under the
+ white noises.In a word, the model performs poorly against random noise.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise4_eta12.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise4_eta3.png
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{\eta}^{\top}$
+\end_inset
+
+under the pink noises with 0.05 mean value.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/yuyouyang/Desktop/noise4_flux.png
+	width 3.5cm
+	height 3.5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $|\tilde{\lambda}(t)|$
+\end_inset
+
+ under pink noises with 0.05 mean value
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+In the original paper, they proposed a new adaptive observer design algorithm
+ that allows parametrizing the perturbed PMSM model into a linear regression
+ equation with respect to the observed flux, with terms related to the current
+ bias and constant offsets related to the measurement error, bias or offset.
+ Using the DREM method, a vector regression equation can be decomposed into
+ a set of scalar regression equations with common measurable regressors
+ and unknown variables or parameters.
+ In this paper, I reproduce their result and prove the superiority of this
+ adaptive observer.
+ At the same time, I carried out an investigation on noises in the measurable
+ signals.
+ By simulating four different types of noise signals in Matlab and applying
+ them to the deviation of voltage and current, I checked the anti-noise
+ ability of the model.
+ The experimental results show that the model has good ability to resist
+ high frequency noise signal and low frequency noise signal, but has poor
+ ability to resist random signal with or not with zero mean.
+\end_layout
+
+\end_body
+\end_document
